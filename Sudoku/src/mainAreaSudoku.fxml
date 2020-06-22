@@ -59,54 +59,54 @@
           <RowConstraints minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <Button layoutX="10.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#handleOnMouseClickedButton1" prefHeight="50.0" prefWidth="50.0" text="1">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="80.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#handleOnMouseClickedButton2" prefHeight="50.0" prefWidth="50.0" text="2">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="150.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#handleOnMouseClickedButton3" prefHeight="50.0" prefWidth="50.0" text="3">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="220.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#handleOnMouseClickedButton4" prefHeight="50.0" prefWidth="50.0" text="4">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="290.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#handleOnMouseClickedButton5" prefHeight="50.0" prefWidth="50.0" text="5">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="360.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#handleOnMouseClickedButton6" prefHeight="50.0" prefWidth="50.0" text="6">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="430.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#handleOnMouseClickedButton7" prefHeight="50.0" prefWidth="50.0" text="7">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="500.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#handleOnMouseClickedButton8" prefHeight="50.0" prefWidth="50.0" text="8">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="570.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#handleOnMouseClickedButton9" prefHeight="50.0" prefWidth="50.0" text="9">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Button>
       <Line endX="210.0" endY="655.0" startX="210.0" startY="29.0" strokeWidth="3.0" />
       <Line endX="420.0" endY="655.0" startX="420.0" startY="29.0" strokeWidth="3.0" />
       <Line endX="630.0" endY="236.0" startY="236.0" strokeWidth="3.0" />
       <Line endX="630.0" endY="436.0" layoutY="10.0" startY="436.0" strokeWidth="3.0" />
+      <Button onMouseClicked="#handleOnMouseClickedButton1" layoutX="10.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#handleOnMouseClickedButton2" layoutX="80.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#handleOnMouseClickedButton3" layoutX="150.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#handleOnMouseClickedButton4" layoutX="220.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#handleOnMouseClickedButton5" layoutX="290.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#handleOnMouseClickedButton6" layoutX="360.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#handleOnMouseClickedButton7" layoutX="430.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#handleOnMouseClickedButton8" layoutX="500.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#handleOnMouseClickedButton9" layoutX="570.0" layoutY="665.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

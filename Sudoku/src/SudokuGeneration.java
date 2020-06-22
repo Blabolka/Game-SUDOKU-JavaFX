@@ -10,7 +10,7 @@ public class SudokuGeneration {
         return sudokuArr;
     }
 
-    public void generate(){
+    private void generate(){
 
         int counterOfInvalidNumbers = 0;
         int counterOfInvalidScramble = 0;

@@ -55,39 +55,21 @@ public class Controller{
         startNewGame();
     }
 
-    public void handleOnMouseClickedButton1(){
-        setLabelOnGridPane("1");
-    }
-    public void handleOnMouseClickedButton2(){
-        setLabelOnGridPane("2");
-    }
-    public void handleOnMouseClickedButton3(){
-        setLabelOnGridPane("3");
-    }
-    public void handleOnMouseClickedButton4(){
-        setLabelOnGridPane("4");
-    }
-    public void handleOnMouseClickedButton5(){
-        setLabelOnGridPane("5");
-    }
-    public void handleOnMouseClickedButton6(){
-        setLabelOnGridPane("6");
-    }
-    public void handleOnMouseClickedButton7(){
-        setLabelOnGridPane("7");
-    }
-    public void handleOnMouseClickedButton8(){
-        setLabelOnGridPane("8");
-    }
-    public void handleOnMouseClickedButton9(){
-        setLabelOnGridPane("9");
-    }
+    public void handleOnMouseClickedButton1(){ setLabelOnGridPane("1"); }
+    public void handleOnMouseClickedButton2(){ setLabelOnGridPane("2"); }
+    public void handleOnMouseClickedButton3(){ setLabelOnGridPane("3"); }
+    public void handleOnMouseClickedButton4(){ setLabelOnGridPane("4"); }
+    public void handleOnMouseClickedButton5(){ setLabelOnGridPane("5"); }
+    public void handleOnMouseClickedButton6(){ setLabelOnGridPane("6"); }
+    public void handleOnMouseClickedButton7(){ setLabelOnGridPane("7"); }
+    public void handleOnMouseClickedButton8(){ setLabelOnGridPane("8"); }
+    public void handleOnMouseClickedButton9(){ setLabelOnGridPane("9"); }
 
     public void handleOnMouseClickedItemEasy(){ difficult = 40;}
     public void handleOnMouseClickedItemMedium(){ difficult = 30;}
     public void handleOnMouseClickedItemHard(){ difficult = 20;}
 
-    private void setLabelOnGridPane(String text){
+    public void setLabelOnGridPane(String text){
         if(metkaIndexX != -1 && metkaIndexY != -1){
             labels[metkaIndexY][metkaIndexX].setText(text);
             usersSudokuArr[metkaIndexY][metkaIndexX] = Integer.parseInt(text);
@@ -121,6 +103,17 @@ public class Controller{
         return true;
     }
 
+    public void clearLabel(){
+        if(metkaIndexX != -1 && metkaIndexY != -1){
+            setBackgroundWhiteColor();
+            usersSudokuArr[metkaIndexY][metkaIndexX] = 0;
+            labels[metkaIndexY][metkaIndexX].setText("");
+
+            metkaIndexX = -1;
+            metkaIndexY = -1;
+        }
+    }
+
     private void clearUsersSudokuArr(){
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
@@ -133,6 +126,7 @@ public class Controller{
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 labels[i][j].setText("");
+                labels[i][j].setFont(new Font("Arial", 30));
             }
         }
     }
@@ -144,6 +138,7 @@ public class Controller{
             }
         }
     }
+
 
     private void showNumbersOnStartingGame(){
         for (int i = 0; i < difficult; i++) {
@@ -157,8 +152,10 @@ public class Controller{
 
             usersSudokuArr[randNumberY][randNumberX] = sudokuArr[randNumberY][randNumberX];
             labels[randNumberY][randNumberX].setText(String.valueOf(sudokuArr[randNumberY][randNumberX]));
+            labels[randNumberY][randNumberX].setFont(new Font("Arial Bold", 35));
             startingNumbers[randNumberY][randNumberX] = true;
         }
+
     }
 
     @FXML
@@ -170,6 +167,7 @@ public class Controller{
 
         SudokuGeneration sudokuGeneration = new SudokuGeneration();
         sudokuArr = sudokuGeneration.getSudokuArr();
+
 
         clearUsersSudokuArr();
         clearAllLabels();
